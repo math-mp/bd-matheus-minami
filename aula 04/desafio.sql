@@ -28,7 +28,15 @@ insert into estoque (nome_jogo, id_jogo) values
 
 select clientes.nome_cliente, estoque.nome_jogo
 from clientes 
-inner join estoque on clientes.nome_cliente, estoque.nome_jogo;
+inner join estoque on clientes.id_cliente = estoque.id_comprador;
+
+select clientes.nome_cliente, estoque.nome_jogo
+from clientes 
+left join estoque on clientes.id_cliente = estoque.id_comprador;
+
+select estoque.nome_jogo, clientes.nome_cliente
+from estoque
+inner join clientes on estoque.id_comprador = cliente.id_cliente;
 
 drop table clientes;
 drop table estoque;
