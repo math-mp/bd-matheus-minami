@@ -144,7 +144,8 @@ drop table alunos;
 /*set SQL_safe_updates = 0;*/
 /*set SQL_safe_updates = 1;*/
 
-
+-- matheus minami pacheco 2DA etec prof. camargo aranha
+-- materia de banco de dados
 
 
 
